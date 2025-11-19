@@ -69,8 +69,8 @@ st.sidebar.subheader("ROI (apply same box to all images)")
 use_roi = st.sidebar.checkbox("Crop to ROI", value=False)
 roi_top = st.sidebar.number_input("ROI top (px)", min_value=0, value=0, step=1)
 roi_left = st.sidebar.number_input("ROI left (px)", min_value=0, value=0, step=1)
-roi_height = st.sidebar.number_input("ROI height (px)", min_value=1, value=0, step=1)
-roi_width = st.sidebar.number_input("ROI width (px)", min_value=1, value=0, step=1)
+roi_height = st.sidebar.number_input("ROI height (px)", min_value=0, value=0, step=1)
+roi_width = st.sidebar.number_input("ROI width (px)", min_value=0, value=0, step=1)
 st.sidebar.caption("If ROI height/width = 0, full image is used. Make sure all images share same size.")
 
 # File upload
